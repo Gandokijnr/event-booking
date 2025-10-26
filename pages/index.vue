@@ -208,8 +208,11 @@
         <p class="text-gray-400 text-lg mb-10">
           Limited tickets available. Secure your spot for this exclusive event.
         </p>
-        <NuxtLink to="/tickets" class="btn-primary text-xl">
-          <span class="flex items-center gap-2">
+        <NuxtLink
+          to="/tickets"
+          class="inline-block btn-primary text-xl mx-auto"
+        >
+          <span class="flex items-center justify-center gap-2">
             <Icon name="mdi:ticket" class="text-2xl" />
             Get Your Tickets
           </span>
