@@ -1,0 +1,26 @@
+/* assets/css/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-orange-600;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white rounded-lg 
+           hover:from-amber-600 hover:to-orange-700 transition-all duration-300 
+           font-semibold shadow-lg hover:shadow-amber-500/25;
+  }
+
+  .card {
+    @apply p-8 rounded-2xl border border-gray-800 bg-gray-900/50 backdrop-blur-sm;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-gray-950 text-gray-200;
+  }
+}
